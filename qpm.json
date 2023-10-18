@@ -7,6 +7,7 @@
     "version": "2.0.0",
     "url": "https://github.com/hardcpp/QBeatSaberPlus_GameTweaker",
     "additionalData": {
+      "cmake": true,
       "overrideSoName": "libqbeatsaberplus_gametweaker.so"
     }
   },
@@ -48,7 +49,9 @@
     {
       "id": "chatplex-sdk-bs",
       "versionRange": "^0.0.2-v6.1.1",
-      "additionalData": {}
+      "additionalData": {
+        "private": true
+      }
     }
   ],
   "workspace": {

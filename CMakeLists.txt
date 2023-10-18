@@ -4,7 +4,7 @@ include(qpm_defines.cmake)
 add_definitions(-DCP_SDK_BMBF)
 
 # override mod id
-set(MOD_ID "qbeatsaberplus_gametweaker")
+set(MOD_ID "QBeatSaberPlus_GameTweaker")
 
 # Enable link time optimization
 # In my experience, this can be highly unstable but it nets a huge size optimization and likely performance
