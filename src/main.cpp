@@ -12,19 +12,19 @@ static ModInfo s_ModInfo;
 // Called at the early stages of game loading
 extern "C" void setup(ModInfo & p_ModInfo)
 {
-    p_ModInfo.id        = "QBeatSaberPlus_GameTweaker";
+    p_ModInfo.id        = "QBeatSaberPlus-GameTweaker";
     p_ModInfo.version   = VERSION;
 
     s_ModInfo = p_ModInfo;
 
     auto l_Logger = new CP_SDK::Logging::BMBFLogger(new Logger(p_ModInfo));
 
-    l_Logger->Error(u"QBeatSaberPlus_GameTweaker Setuping!");
+    l_Logger->Error(u"QBeatSaberPlus-GameTweaker Setuping!");
 
     QBeatSaberPlus_GameTweaker::Logger::Instance = l_Logger;
     CP_SDK::ChatPlexSDK::RegisterModule(new QBeatSaberPlus_GameTweaker::GameTweaker());
 
-    l_Logger->Error(u"QBeatSaberPlus_GameTweaker Completed setup!");
+    l_Logger->Error(u"QBeatSaberPlus-GameTweaker Completed setup!");
 }
 
 ////////////////////////////////////////////////////////////////////////////

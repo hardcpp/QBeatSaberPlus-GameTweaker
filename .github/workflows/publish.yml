@@ -6,8 +6,8 @@ on:
       - 'v*'
 
 env:
-    module_id: qbeatsaberplus_gametweaker
-    qmodName: QBeatSaberPlus_GameTweaker
+    module_id: qbeatsaberplus-gametweaker
+    qmodName: QBeatSaberPlus-GameTweaker
 
 jobs:
   publish:

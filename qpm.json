@@ -2,13 +2,13 @@
   "sharedDir": "shared",
   "dependenciesDir": "extern",
   "info": {
-    "name": "QBeatSaberPlus_GameTweaker",
-    "id": "qbeatsaberplus_gametweaker",
+    "name": "QBeatSaberPlus-GameTweaker",
+    "id": "qbeatsaberplus-gametweaker",
     "version": "2.0.0",
-    "url": "https://github.com/hardcpp/QBeatSaberPlus_GameTweaker",
+    "url": "https://github.com/hardcpp/QBeatSaberPlus-GameTweaker",
     "additionalData": {
       "cmake": true,
-      "overrideSoName": "libqbeatsaberplus_gametweaker.so"
+      "overrideSoName": "libqbeatsaberplus-gametweaker.so"
     }
   },
   "dependencies": [

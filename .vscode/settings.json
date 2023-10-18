@@ -122,9 +122,11 @@
         "source_location": "cpp",
         "stop_token": "cpp",
         "__std_stream": "cpp",
-        "memory_resource": "cpp"
+        "memory_resource": "cpp",
+        "ranges": "cpp"
     },
     "editor.formatOnSave": false,
     "editor.trimAutoWhitespace": true,
-    "cmake.configureOnOpen": false
+    "cmake.configureOnOpen": false,
+    "cmake.automaticReconfigure": true
 }

@@ -3,12 +3,12 @@
     "sharedDir": "shared",
     "dependenciesDir": "extern",
     "info": {
-      "name": "QBeatSaberPlus_GameTweaker",
-      "id": "qbeatsaberplus_gametweaker",
+      "name": "QBeatSaberPlus-GameTweaker",
+      "id": "qbeatsaberplus-gametweaker",
       "version": "2.0.0",
-      "url": "https://github.com/hardcpp/QBeatSaberPlus_GameTweaker",
+      "url": "https://github.com/hardcpp/QBeatSaberPlus-GameTweaker",
       "additionalData": {
-        "overrideSoName": "libqbeatsaberplus_gametweaker.so",
+        "overrideSoName": "libqbeatsaberplus-gametweaker.so",
         "cmake": true
       }
     },
@@ -57,22 +57,22 @@
     ],
     "workspace": {
       "scripts": {
-        "clean": [
-          "pwsh ./build.ps1 -clean"
+        "build": [
+          "pwsh ./build.ps1"
+        ],
+        "log": [
+          "pwsh ./start-logging.ps1"
         ],
         "qmod": [
           "pwsh ./build.ps1 -clean",
           "qpm qmod build",
           "pwsh ./createqmod.ps1 -clean"
         ],
-        "build": [
-          "pwsh ./build.ps1"
+        "clean": [
+          "pwsh ./build.ps1 -clean"
         ],
         "copy": [
           "pwsh ./copy.ps1"
-        ],
-        "log": [
-          "pwsh ./start-logging.ps1"
         ]
       }
     }

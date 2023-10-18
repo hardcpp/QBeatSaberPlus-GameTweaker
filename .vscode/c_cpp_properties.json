@@ -5,7 +5,7 @@
     "configurations": [
         {
             "defines": [
-                "MOD_ID=\"QBeatSaberPlus_GameTweaker\"",
+                "MOD_ID=\"QBeatSaberPlus-GameTweaker\"",
                 "VERSION=\"x.x.x\"",
                 "__GNUC__",
                 "__aarch64__",
