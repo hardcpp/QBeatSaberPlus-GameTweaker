@@ -1,0 +1,75 @@
+{
+  "sharedDir": "shared",
+  "dependenciesDir": "extern",
+  "info": {
+    "name": "QBeatSaberPlus_GameTweaker",
+    "id": "qbeatsaberplus_gametweaker",
+    "version": "2.0.0",
+    "url": "https://github.com/hardcpp/QBeatSaberPlus_GameTweaker",
+    "additionalData": {
+      "overrideSoName": "libqbeatsaberplus_gametweaker.so"
+    }
+  },
+  "dependencies": [
+    {
+      "id": "beatsaber-hook",
+      "versionRange": "^3.14.0",
+      "additionalData": {
+        "extraFiles": [
+          "src/inline-hook"
+        ]
+      }
+    },
+    {
+      "id": "codegen",
+      "versionRange": "^0.33.0",
+      "additionalData": {}
+    },
+    {
+      "id": "custom-types",
+      "versionRange": "^0.15.24",
+      "additionalData": {}
+    },
+    {
+      "id": "modloader",
+      "versionRange": "^1.2.3",
+      "additionalData": {}
+    },
+    {
+      "id": "libil2cpp",
+      "versionRange": "^0.2.3",
+      "additionalData": {}
+    },
+    {
+      "id": "songloader",
+      "versionRange": "^0.10.15",
+      "additionalData": {}
+    },
+    {
+      "id": "chatplex-sdk-bs",
+      "versionRange": "^0.0.2-v6.1.1",
+      "additionalData": {}
+    }
+  ],
+  "workspace": {
+    "scripts": {
+      "build": [
+        "pwsh ./build.ps1"
+      ],
+      "clean": [
+        "pwsh ./build.ps1 -clean"
+      ],
+      "copy": [
+        "pwsh ./copy.ps1"
+      ],
+      "log": [
+        "pwsh ./start-logging.ps1"
+      ],
+      "qmod": [
+        "pwsh ./build.ps1 -clean",
+        "qpm qmod build",
+        "pwsh ./createqmod.ps1 -clean"
+      ]
+    }
+  }
+}
