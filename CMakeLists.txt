@@ -122,4 +122,4 @@ add_custom_command(TARGET ${COMPILE_ID} POST_BUILD
         endforeach()
 
 
-include(assets_include.cmake)
+#include(assets_include.cmake)
