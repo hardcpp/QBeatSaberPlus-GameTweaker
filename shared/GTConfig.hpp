@@ -7,7 +7,10 @@
 
 namespace QBeatSaberPlus_GameTweaker {
 
-    using namespace UnityEngine;
+    namespace _u
+    {
+        using namespace UnityEngine;
+    }
 
     class GTConfig : public CP_SDK::Config::JsonConfig
     {
@@ -24,10 +27,10 @@ namespace QBeatSaberPlus_GameTweaker {
             };
             struct _LevelSelection
             {
-                bool    RemoveBaseGameFilterButton  = false;
-                bool    HighlightEnabled            = true;
-                Color32 HighlightPlayed             = Color32(248, 230, 0, 255);
-                Color32 HighlightAllPlayed          = Color32( 82, 247, 0, 255);
+                bool        RemoveBaseGameFilterButton  = false;
+                bool        HighlightEnabled            = true;
+                _u::Color32 HighlightPlayed             = _u::Color32(248, 230, 0, 255);
+                _u::Color32 HighlightAllPlayed          = _u::Color32( 82, 247, 0, 255);
 
                 CP_SDK_JSON_SERIALIZE_DECL();
                 CP_SDK_JSON_UNSERIALIZE_DECL();
@@ -44,12 +47,12 @@ namespace QBeatSaberPlus_GameTweaker {
             };
             struct _MainMenu
             {
-                bool    OverrideMenuEnvColors           = false;
-                Color   BaseColor                       = Color(0.421376616f, 0.201642916f, 0.67450980f, 1.0f);
-                Color   LevelClearedColor               = Color(0.203647852f, 0.479708000f, 0.07326582f, 1.0f);
-                Color   LevelFailedColor                = Color(0.796078444f, 0.137425855f, 0.00000000f, 1.0f);
-                bool    RemoveNewContentPromotional     = true;
-                bool    DisableFireworks                = false;
+                bool        OverrideMenuEnvColors           = false;
+                _u::Color   BaseColor                       = _u::Color(0.421376616f, 0.201642916f, 0.67450980f, 1.0f);
+                _u::Color   LevelClearedColor               = _u::Color(0.203647852f, 0.479708000f, 0.07326582f, 1.0f);
+                _u::Color   LevelFailedColor                = _u::Color(0.796078444f, 0.137425855f, 0.00000000f, 1.0f);
+                bool        RemoveNewContentPromotional     = true;
+                bool        DisableFireworks                = false;
 
                 CP_SDK_JSON_SERIALIZE_DECL();
                 CP_SDK_JSON_UNSERIALIZE_DECL();

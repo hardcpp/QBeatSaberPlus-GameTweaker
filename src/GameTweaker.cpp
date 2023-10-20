@@ -18,12 +18,9 @@
 #include <UnityEngine/Resources.hpp>
 #include <UnityEngine/GameObject.hpp>
 
+using namespace UnityEngine;
+
 namespace QBeatSaberPlus_GameTweaker {
-
-    using namespace UnityEngine;
-
-    ////////////////////////////////////////////////////////////////////////////
-    ////////////////////////////////////////////////////////////////////////////
 
     CP_SDK_MODULE_BASE_INSTANCE_IMPL(GameTweaker);
 

@@ -10,6 +10,7 @@
 #include <UnityEngine/Transform.hpp>
 
 using namespace GlobalNamespace;
+using namespace UnityEngine;
 
 namespace QBeatSaberPlus_GameTweaker::Patches {
 
