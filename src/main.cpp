@@ -17,7 +17,7 @@ extern "C" void setup(ModInfo & p_ModInfo)
 
     s_ModInfo = p_ModInfo;
 
-    auto l_Logger = new CP_SDK::Logging::BMBFLogger(new Logger(p_ModInfo));
+    auto l_Logger = new CP_SDK::Logging::BMBFLogger(new Logger(p_ModInfo, LoggerOptions(false, true)));
 
     l_Logger->Error(u"QBeatSaberPlus-GameTweaker Setuping!");
 
