@@ -34,9 +34,9 @@ foreach ($mod in $modJson.modFiles) {
 }
 
 foreach ($lib in $modJson.libraryFiles) {
-    if ($lib -eq "libchatplex-sdk-bs.so") {
-        Continue
-    }
+    #if ($lib -eq "libchatplex-sdk-bs.so") {
+    #    Continue
+    #}
 
 
     $path = "./build/" + $lib

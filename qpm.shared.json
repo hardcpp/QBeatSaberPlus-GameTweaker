@@ -5,7 +5,7 @@
     "info": {
       "name": "QBeatSaberPlus-GameTweaker",
       "id": "qbeatsaberplus-gametweaker",
-      "version": "0.1.1-v6.2.0",
+      "version": "1.0.0-v6.2.0",
       "url": "https://github.com/hardcpp/QBeatSaberPlus-GameTweaker",
       "additionalData": {
         "overrideSoName": "libqbeatsaberplus-gametweaker.so",
@@ -49,7 +49,7 @@
       },
       {
         "id": "chatplex-sdk-bs",
-        "versionRange": "^0.1.1-v6.2.0",
+        "versionRange": "^1.0.0-v6.2.0",
         "additionalData": {
           "private": true
         }
@@ -57,6 +57,12 @@
     ],
     "workspace": {
       "scripts": {
+        "clean": [
+          "pwsh ./build.ps1 -clean"
+        ],
+        "log": [
+          "pwsh ./start-logging.ps1"
+        ],
         "qmod": [
           "pwsh ./build.ps1 -clean",
           "qpm qmod build",
@@ -64,12 +70,6 @@
         ],
         "copy": [
           "pwsh ./copy.ps1"
-        ],
-        "clean": [
-          "pwsh ./build.ps1 -clean"
-        ],
-        "log": [
-          "pwsh ./start-logging.ps1"
         ],
         "build": [
           "pwsh ./build.ps1"
@@ -103,13 +103,13 @@
     {
       "dependency": {
         "id": "chatplex-sdk-bs",
-        "versionRange": "=0.1.1-v6.2.0",
+        "versionRange": "=1.0.0-v6.2.0",
         "additionalData": {
           "overrideSoName": "libchatplex-sdk-bs.so",
           "cmake": true
         }
       },
-      "version": "0.1.1-v6.2.0"
+      "version": "1.0.0-v6.2.0"
     },
     {
       "dependency": {
