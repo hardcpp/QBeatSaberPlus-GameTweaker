@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief Base game filter removing
     class PLevelSearchViewController
     {
-        DISABLE_CONSTRUCTORS(PLevelSearchViewController);
+        CP_SDK_NO_DEF_CTORS(PLevelSearchViewController);
 
         public:
             /// @brief Set if we remove base game filter

@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief Cut ribbon remover
     class PNoteCutCoreEffectsSpawner
     {
-        DISABLE_CONSTRUCTORS(PNoteCutCoreEffectsSpawner);
+        CP_SDK_NO_DEF_CTORS(PNoteCutCoreEffectsSpawner);
 
         public:
             /// @brief Set if the effect is removed

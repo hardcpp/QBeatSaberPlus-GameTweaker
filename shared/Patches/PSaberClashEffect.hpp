@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief SaberClashEffect remover
     class PSaberClashEffect
     {
-        DISABLE_CONSTRUCTORS(PSaberClashEffect);
+        CP_SDK_NO_DEF_CTORS(PSaberClashEffect);
 
         public:
             /// @brief Set if the effect is removed

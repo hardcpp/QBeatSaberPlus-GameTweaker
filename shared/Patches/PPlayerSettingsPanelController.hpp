@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief PlayerSettingsPanelController modifier
     class PPlayerSettingsPanelController
     {
-        DISABLE_CONSTRUCTORS(PPlayerSettingsPanelController);
+        CP_SDK_NO_DEF_CTORS(PPlayerSettingsPanelController);
 
         public:
             /// @brief Set if the effect is enabled

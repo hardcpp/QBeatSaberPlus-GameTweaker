@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief MainMenuViewController
     class PMainMenuViewController
     {
-        DISABLE_CONSTRUCTORS(PMainMenuViewController);
+        CP_SDK_NO_DEF_CTORS(PMainMenuViewController);
 
         public:
             /// @brief Set if Pack music promo banner should be hidden

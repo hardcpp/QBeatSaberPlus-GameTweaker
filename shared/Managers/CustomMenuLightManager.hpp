@@ -26,14 +26,14 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
         public:
             _u::Color _color;
 
-            CP_SDK_IL2CPP_OVERRIDE_METHOD2(_u, ColorSO, _u::Color, get_color);
+            CP_SDK_IL2CPP_OVERRIDE_METHOD_EX(_u, ColorSO, _u::Color, get_color);
 
     };
 
     /// @brief Custom menu light manager replacement
     class CustomMenuLightManager
     {
-        DISABLE_CONSTRUCTORS(CustomMenuLightManager);
+        CP_SDK_NO_DEF_CTORS(CustomMenuLightManager);
 
         private:
             static _u::MonoPtr<_u::MenuLightsManager>                       m_MenuLightsManager;

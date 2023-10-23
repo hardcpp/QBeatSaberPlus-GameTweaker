@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief SaberBurnMarkSparkles remover
     class PSaberBurnMarkSparkles
     {
-        DISABLE_CONSTRUCTORS(PSaberBurnMarkSparkles);
+        CP_SDK_NO_DEF_CTORS(PSaberBurnMarkSparkles);
 
         public:
             /// @brief Set if the effect is removed

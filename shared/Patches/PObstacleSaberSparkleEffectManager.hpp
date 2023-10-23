@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief ObstacleSaberSparkleEffect remover
     class PObstacleSaberSparkleEffectManager
     {
-        DISABLE_CONSTRUCTORS(PObstacleSaberSparkleEffectManager);
+        CP_SDK_NO_DEF_CTORS(PObstacleSaberSparkleEffectManager);
 
         public:
             /// @brief Set if the effect is removed

@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches { namespace Lights {
     /// @brief LightSwitchEventEffect patch
     class PLightsPatches
     {
-        DISABLE_CONSTRUCTORS(PLightsPatches);
+        CP_SDK_NO_DEF_CTORS(PLightsPatches);
 
         public:
             /// @brief Set from configuration

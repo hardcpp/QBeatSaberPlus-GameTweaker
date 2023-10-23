@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief SaberBurnMarkArea remover
     class PSaberBurnMarkArea
     {
-        DISABLE_CONSTRUCTORS(PSaberBurnMarkArea);
+        CP_SDK_NO_DEF_CTORS(PSaberBurnMarkArea);
 
         public:
             /// @brief Set if the effect is removed

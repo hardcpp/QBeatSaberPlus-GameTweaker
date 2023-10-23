@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief PromoViewController remover
     class PPromoViewController
     {
-        DISABLE_CONSTRUCTORS(PPromoViewController);
+        CP_SDK_NO_DEF_CTORS(PPromoViewController);
 
         public:
             /// @brief Set if PromoViewController should be hidden

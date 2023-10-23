@@ -7,7 +7,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     /// @brief Debris remover
     class PNoteDebrisSpawner
     {
-        DISABLE_CONSTRUCTORS(PNoteDebrisSpawner);
+        CP_SDK_NO_DEF_CTORS(PNoteDebrisSpawner);
 
         public:
             /// @brief Set from configuration
