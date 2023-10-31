@@ -4,7 +4,7 @@
   "info": {
     "name": "QBeatSaberPlus-GameTweaker",
     "id": "qbeatsaberplus-gametweaker",
-    "version": "1.0.2-v6.2.0",
+    "version": "1.0.3-v6.2.0",
     "url": "https://github.com/hardcpp/QBeatSaberPlus-GameTweaker",
     "additionalData": {
       "cmake": true,
@@ -48,7 +48,7 @@
     },
     {
       "id": "chatplex-sdk-bs",
-      "versionRange": "^1.0.2-v6.2.0",
+      "versionRange": "^1.0.3-v6.2.0",
       "additionalData": {
         "private": true
       }

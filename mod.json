@@ -3,7 +3,7 @@
   "name": "QBeatSaberPlus-GameTweaker",
   "id": "qbeatsaberplus-gametweaker",
   "author": "HardCPP",
-  "version": "1.0.2-v6.2.0",
+  "version": "1.0.3-v6.2.0",
   "packageId": "com.beatgames.beatsaber",
   "packageVersion": "1.28.0_4124311467",
   "description": "Feel good!",
@@ -25,9 +25,9 @@
       "downloadIfMissing": "https://github.com/darknight1050/SongLoader/releases/download/v0.10.17/SongLoader.qmod"
     },
     {
-      "version": "^1.0.2-v6.2.0",
+      "version": "^1.0.3-v6.2.0",
       "id": "chatplex-sdk-bs",
-      "downloadIfMissing": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v1.0.2-v6.2.0/ChatPlexSDK-BS.qmod"
+      "downloadIfMissing": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v1.0.3-v6.2.0/ChatPlexSDK-BS.qmod"
     }
   ],
   "modFiles": [
