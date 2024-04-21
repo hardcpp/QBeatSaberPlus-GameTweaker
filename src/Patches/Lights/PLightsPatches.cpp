@@ -16,7 +16,6 @@
 #include <GlobalNamespace/TubeBloomPrePassLightWithId.hpp>
 #include <GlobalNamespace/UnityLightWithId.hpp>
 #include <GlobalNamespace/LightWithIds.hpp>
-#include <GlobalNamespace/LightWithIds_LightWithId.hpp>
 #include <GlobalNamespace/LightmapLightWithIds.hpp>
 
 using namespace GlobalNamespace;

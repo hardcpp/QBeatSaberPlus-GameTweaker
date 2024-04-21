@@ -2,39 +2,37 @@
   "_QPVersion": "0.1.2",
   "name": "QBeatSaberPlus-GameTweaker",
   "id": "qbeatsaberplus-gametweaker",
+  "modloader": "Scotland2",
   "author": "HardCPP",
-  "version": "6.2.0",
+  "version": "6.2.1",
   "packageId": "com.beatgames.beatsaber",
-  "packageVersion": "1.28.0_4124311467",
+  "packageVersion": "1.35.0_8016709773",
   "description": "Feel good!",
   "coverImage": "cover.png",
   "dependencies": [
     {
-      "version": "^0.33.0",
-      "id": "codegen",
-      "downloadIfMissing": "https://github.com/sc2ad/BeatSaber-Quest-Codegen/releases/download/v0.33.0/Codegen.qmod"
-    },
-    {
-      "version": "^0.15.24",
+      "version": "^0.17.6",
       "id": "custom-types",
-      "downloadIfMissing": "https://github.com/sc2ad/Il2CppQuestTypePatching/releases/download/v0.15.24/CustomTypes.qmod"
+      "downloadIfMissing": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.7/CustomTypes.qmod"
     },
     {
-      "version": "^0.10.15",
-      "id": "songloader",
-      "downloadIfMissing": "https://github.com/darknight1050/SongLoader/releases/download/v0.10.17/SongLoader.qmod"
+      "version": "=1.1.4",
+      "id": "songcore",
+      "downloadIfMissing": "https://github.com/raineio/Quest-SongCore/releases/download/v1.1.4/SongCore.qmod"
     },
     {
-      "version": "^6.2.0",
-      "id": "chatplex-sdk-bs",
-      "downloadIfMissing": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.2.0/ChatPlexSDK-BS.qmod"
+      "version": "^3.6.3",
+      "id": "paper",
+      "downloadIfMissing": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.3/paperlog.qmod"
     }
   ],
-  "modFiles": [
+  "modFiles": [],
+  "lateModFiles": [
     "libqbeatsaberplus-gametweaker.so"
   ],
   "libraryFiles": [
-    "libbeatsaber-hook_3_14_0.so"
+    "libchatplex-sdk-bs.so",
+    "libbeatsaber-hook_5_1_6.so"
   ],
   "fileCopies": [],
   "copyExtensions": []

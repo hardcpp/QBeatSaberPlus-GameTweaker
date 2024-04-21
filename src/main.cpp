@@ -2,22 +2,21 @@
 #include "GameTweaker.hpp"
 
 #include <CP_SDK/ChatPlexSDK.hpp>
-#include <CP_SDK/Logging/BMBFLogger.hpp>
+#include <CP_SDK/Logging/PaperLogger.hpp>
 
 #include <beatsaber-hook/shared/utils/il2cpp-functions.hpp>
 #include <custom-types/shared/register.hpp>
 
-static ModInfo s_ModInfo;
+static modloader::ModInfo s_ModInfo{"QBeatSaberPlus-GameTweaker", VERSION, GIT_COMMIT};
 
 // Called at the early stages of game loading
-extern "C" void setup(ModInfo & p_ModInfo)
+extern "C" void setup(CModInfo* p_ModInfo)
 {
-    p_ModInfo.id        = "QBeatSaberPlus-GameTweaker";
-    p_ModInfo.version   = VERSION;
+    p_ModInfo->id           = s_ModInfo.id.c_str();
+    p_ModInfo->version      = s_ModInfo.version.c_str();
+    p_ModInfo->version_long = s_ModInfo.versionLong;
 
-    s_ModInfo = p_ModInfo;
-
-    auto l_Logger = new CP_SDK::Logging::BMBFLogger(new Logger(p_ModInfo, LoggerOptions(false, true)));
+    auto l_Logger = new CP_SDK::Logging::PaperLogger(p_ModInfo->id);
 
     l_Logger->Error(u"QBeatSaberPlus-GameTweaker Setuping!");
 
@@ -31,7 +30,7 @@ extern "C" void setup(ModInfo & p_ModInfo)
 ////////////////////////////////////////////////////////////////////////////
 
 // Called later on in the game loading - a good time to install function hooks
-extern "C" void load()
+extern "C" void late_load()
 {
     il2cpp_functions::Init();
 

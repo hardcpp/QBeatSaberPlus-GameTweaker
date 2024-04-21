@@ -4,11 +4,11 @@
 #include "Patches/Lights/PLightsPatches.hpp"
 #include "Patches/PLevelSearchViewController.hpp"
 #include "Patches/PMainMenuViewController.hpp"
+#include "Patches/PMusicPackPromoBanner.hpp"
 #include "Patches/PNoteCutCoreEffectsSpawner.hpp"
 #include "Patches/PNoteDebrisSpawner.hpp"
 #include "Patches/PObstacleSaberSparkleEffectManager.hpp"
 #include "Patches/PPlayerSettingsPanelController.hpp"
-#include "Patches/PPromoViewController.hpp"
 #include "Patches/PSaberBurnMarkArea.hpp"
 #include "Patches/PSaberBurnMarkSparkles.hpp"
 #include "Patches/PSaberClashEffect.hpp"
@@ -120,7 +120,7 @@ namespace QBeatSaberPlus_GameTweaker {
         } catch (const std::exception& p_PatchException) { Logger::Instance->Error(u"[GameTweaker] Error on updating PMainMenuViewController"); Logger::Instance->Error(p_PatchException); }
         /// Apply new content promotional settings
         try {
-            Patches::PPromoViewController::SetEnabled(!p_ForceDisable && GTConfig::Instance()->MainMenu->RemoveNewContentPromotional);
+            Patches::PMusicPackPromoBanner::SetEnabled(!p_ForceDisable && GTConfig::Instance()->MainMenu->RemoveNewContentPromotional);
         } catch (const std::exception& p_PatchException) { Logger::Instance->Error(u"[GameTweaker] Error on updating PPromoViewController"); Logger::Instance->Error(p_PatchException); }
         /// Apply player settings
         try {
@@ -163,10 +163,10 @@ namespace QBeatSaberPlus_GameTweaker {
         Patches::Lights::PLightsPatches::SetFromConfig();
         Patches::PNoteDebrisSpawner::SetFromConfig();
 
-        if (GTConfig::Instance()->Environment->RemoveMusicBandLogo && p_LevelData && p_LevelData->Data && p_LevelData->Data->environmentInfo)
+        if (GTConfig::Instance()->Environment->RemoveMusicBandLogo && p_LevelData && p_LevelData->Data && p_LevelData->Data->___environmentInfo)
         {
-            if (   p_LevelData->Data->environmentInfo->serializedName == "BTSEnvironment"
-                || p_LevelData->Data->environmentInfo->serializedName == "LinkinParkEnvironment")
+            if (   p_LevelData->Data->___environmentInfo->____serializedName == "BTSEnvironment"
+                || p_LevelData->Data->___environmentInfo->____serializedName == "LinkinParkEnvironment")
             {
                 GameObject::New_ctor("BeatSaberPlus_MusicBandLogoRemover")->AddComponent<Components::MusicBandLogoRemover*>();
             }

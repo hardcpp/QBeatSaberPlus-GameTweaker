@@ -4,7 +4,6 @@
 #include <CP_SDK/Utils/MonoPtr.hpp>
 
 #include <GlobalNamespace/LevelSearchViewController.hpp>
-#include <GlobalNamespace/IBeatmapLevelPack.hpp>
 #include <TMPro/TextMeshProUGUI.hpp>
 #include <UnityEngine/GameObject.hpp>
 #include <UnityEngine/Transform.hpp>
@@ -40,8 +39,8 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     {
         LevelSearchViewController_Setup(__Instance, __a, __b, __c);
 
-        if (__Instance->filterParamsText)
-            PLevelSearchViewController_FilterButton = __Instance->filterParamsText->get_transform()->get_parent()->get_gameObject();
+        if (__Instance->____filterParamsText)
+            PLevelSearchViewController_FilterButton = __Instance->____filterParamsText->get_transform()->get_parent()->get_gameObject();
         else
             PLevelSearchViewController_FilterButton = nullptr;
 

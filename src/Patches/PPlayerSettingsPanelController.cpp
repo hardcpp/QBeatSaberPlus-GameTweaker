@@ -11,10 +11,9 @@
 #include <GlobalNamespace/FormattedFloatListSettingsController.hpp>
 #include <GlobalNamespace/PlayerHeightSettingsController.hpp>
 #include <GlobalNamespace/PlayerSettingsPanelController.hpp>
-#include <GlobalNamespace/PlayerSettingsPanelController_PlayerSettingsPanelLayout.hpp>
 #include <GlobalNamespace/NoteJumpDurationTypeSettingsDropdown.hpp>
 #include <GlobalNamespace/NoteJumpStartBeatOffsetDropdown.hpp>
-#include <Polyglot/LocalizedTextMeshProUGUI.hpp>
+#include <BGLib/Polyglot/LocalizedTextMeshProUGUI.hpp>
 #include <System/Action_2.hpp>
 #include <TMPro/TextMeshProUGUI.hpp>
 #include <UnityEngine/GameObject.hpp>
@@ -23,7 +22,7 @@
 
 using namespace CP_SDK::Unity::Extensions;
 using namespace GlobalNamespace;
-using namespace Polyglot;
+using namespace BGLib::Polyglot;
 using namespace TMPro;
 using namespace UnityEngine;
 using namespace UnityEngine::UI;
@@ -181,21 +180,21 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
 
         PlayerSettingsPanelController::PlayerSettingsPanelLayout __a)
     {
-        PMainMenuViewController_LeftHandedToggle                                  = __Instance->leftHandedToggle;
-        PMainMenuViewController_EnvironmentEffectsFilterDefaultPresetDropdown     = __Instance->environmentEffectsFilterDefaultPresetDropdown;
-        PMainMenuViewController_EnvironmentEffectsFilterExpertPlusPresetDropdown  = __Instance->environmentEffectsFilterExpertPlusPresetDropdown;
-        PMainMenuViewController_ReduceDebrisToggle                                = __Instance->reduceDebrisToggle;
-        PMainMenuViewController_NoTextsAndHudsToggle                              = __Instance->noTextsAndHudsToggle;
-        PMainMenuViewController_AdvanceHudToggle                                  = __Instance->advanceHudToggle;
-        PMainMenuViewController_PlayerHeightSettingsController                    = __Instance->playerHeightSettingsController;
-        PMainMenuViewController_AutomaticPlayerHeightToggle                       = __Instance->automaticPlayerHeightToggle;
-        PMainMenuViewController_SfxVolumeSettingsController                       = __Instance->sfxVolumeSettingsController;
-        PMainMenuViewController_SaberTrailIntensitySettingsController             = __Instance->saberTrailIntensitySettingsController;
-        PMainMenuViewController_NoteJumpStartBeatOffsetDropdown                   = __Instance->noteJumpStartBeatOffsetDropdown;
-        PMainMenuViewController_HideNoteSpawnEffectToggle                         = __Instance->hideNoteSpawnEffectToggle;
-        PMainMenuViewController_AdaptiveSfxToggle                                 = __Instance->adaptiveSfxToggle;
-        PMainMenuViewController_NoteJumpDurationTypeSettingsDropdown              = __Instance->noteJumpDurationTypeSettingsDropdown;
-        PMainMenuViewController_NoteJumpFixedDurationSettingsController           = __Instance->noteJumpFixedDurationSettingsController;
+        PMainMenuViewController_LeftHandedToggle                                  = __Instance->____leftHandedToggle;
+        PMainMenuViewController_EnvironmentEffectsFilterDefaultPresetDropdown     = __Instance->____environmentEffectsFilterDefaultPresetDropdown;
+        PMainMenuViewController_EnvironmentEffectsFilterExpertPlusPresetDropdown  = __Instance->____environmentEffectsFilterExpertPlusPresetDropdown;
+        PMainMenuViewController_ReduceDebrisToggle                                = __Instance->____reduceDebrisToggle;
+        PMainMenuViewController_NoTextsAndHudsToggle                              = __Instance->____noTextsAndHudsToggle;
+        PMainMenuViewController_AdvanceHudToggle                                  = __Instance->____advanceHudToggle;
+        PMainMenuViewController_PlayerHeightSettingsController                    = __Instance->____playerHeightSettingsController;
+        PMainMenuViewController_AutomaticPlayerHeightToggle                       = __Instance->____automaticPlayerHeightToggle;
+        PMainMenuViewController_SfxVolumeSettingsController                       = __Instance->____sfxVolumeSettingsController;
+        PMainMenuViewController_SaberTrailIntensitySettingsController             = __Instance->____saberTrailIntensitySettingsController;
+        PMainMenuViewController_NoteJumpStartBeatOffsetDropdown                   = __Instance->____noteJumpStartBeatOffsetDropdown;
+        PMainMenuViewController_HideNoteSpawnEffectToggle                         = __Instance->____hideNoteSpawnEffectToggle;
+        PMainMenuViewController_AdaptiveSfxToggle                                 = __Instance->____adaptiveSfxToggle;
+        PMainMenuViewController_NoteJumpDurationTypeSettingsDropdown              = __Instance->____noteJumpDurationTypeSettingsDropdown;
+        PMainMenuViewController_NoteJumpFixedDurationSettingsController           = __Instance->____noteJumpFixedDurationSettingsController;
 
         auto l_Config = GTConfig::Instance();
 

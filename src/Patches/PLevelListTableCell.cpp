@@ -9,7 +9,7 @@
 #include <string.h>
 
 #include <GlobalNamespace/LevelListTableCell.hpp>
-#include <GlobalNamespace/IPreviewBeatmapLevel.hpp>
+#include <GlobalNamespace/BeatmapLevel.hpp>
 #include <TMPro/TextMeshProUGUI.hpp>
 
 using namespace CP_SDK::Unity::Extensions;
@@ -21,7 +21,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
         LevelListTableCell_SetDataFromLevelAsync, &LevelListTableCell::SetDataFromLevelAsync,
         void, LevelListTableCell* __Instance,
 
-        IPreviewBeatmapLevel* __a, bool __b, bool __c, bool __d)
+        BeatmapLevel* __a, bool __b, bool __c, bool __d)
     {
         LevelListTableCell_SetDataFromLevelAsync(__Instance, __a, __b, __c, __d);
 
@@ -32,7 +32,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
             {
                 auto l_HaveAnyScore     = false;
                 auto l_HaveAllScores    = false;
-                CP_SDK_BS::Game::Levels::GetScoresByLevelID(__a->get_levelID(), &l_HaveAnyScore, &l_HaveAllScores);
+                CP_SDK_BS::Game::Levels::GetScoresByLevelID(__a->___levelID, &l_HaveAnyScore, &l_HaveAllScores);
 
                 StringW l_ColorPrefix;
                 if (l_HaveAllScores)
@@ -40,7 +40,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
                 else if (l_HaveAnyScore)
                     l_ColorPrefix = "<" + ColorU::ToHexRGB(ColorU::Convert(l_Config->LevelSelection->HighlightPlayed)) + ">";
 
-                __Instance->songNameText->set_text(l_ColorPrefix + __Instance->songNameText->get_text());
+                __Instance->____songNameText->set_text(l_ColorPrefix + __Instance->____songNameText->get_text());
             }
             catch (const std::exception& l_Exception)
             {
