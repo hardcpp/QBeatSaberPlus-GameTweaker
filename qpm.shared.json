@@ -6,7 +6,7 @@
     "info": {
       "name": "QBeatSaberPlus-GameTweaker",
       "id": "qbeatsaberplus-gametweaker",
-      "version": "6.2.1",
+      "version": "6.3.0",
       "url": "https://github.com/hardcpp/QBeatSaberPlus-GameTweaker",
       "additionalData": {
         "overrideSoName": "libqbeatsaberplus-gametweaker.so",
@@ -36,7 +36,10 @@
           "qpm qmod build",
           "pwsh ./createqmod.ps1 -clean"
         ]
-      }
+      },
+      "qmodIncludeDirs": [],
+      "qmodIncludeFiles": [],
+      "qmodOutput": null
     },
     "dependencies": [
       {
@@ -86,7 +89,7 @@
       },
       {
         "id": "chatplex-sdk-bs",
-        "versionRange": "^6.2.0",
+        "versionRange": "^6.3.0",
         "additionalData": {
           "private": true
         }
@@ -117,23 +120,28 @@
     {
       "dependency": {
         "id": "libil2cpp",
-        "versionRange": "=0.3.1",
+        "versionRange": "=0.3.2",
         "additionalData": {
-          "headersOnly": true
+          "headersOnly": true,
+          "cmake": false
         }
       },
-      "version": "0.3.1"
+      "version": "0.3.2"
     },
     {
       "dependency": {
         "id": "chatplex-sdk-bs",
-        "versionRange": "=6.2.1",
+        "versionRange": "=6.3.0",
         "additionalData": {
+          "soLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.0/libchatplex-sdk-bs.so",
+          "debugSoLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.0/debug_libchatplex-sdk-bs.so",
           "overrideSoName": "libchatplex-sdk-bs.so",
+          "modLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.0/ChatPlexSDK-BS.qmod",
+          "branchName": "version/v6_3_0",
           "cmake": true
         }
       },
-      "version": "6.2.1"
+      "version": "6.3.0"
     },
     {
       "dependency": {
