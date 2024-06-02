@@ -21,9 +21,9 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
         {
             std::ostringstream l_Builder;
             l_Builder.precision(2);
-            l_Builder << std::fixed << __Instance->value;
+            l_Builder << std::fixed << __Instance->____value;
 
-            __Instance->text->set_text(l_Builder.str());
+            __Instance->____text->set_text(l_Builder.str());
         }
     }
 

@@ -36,7 +36,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     {
         NoteCutCoreEffectsSpawner_Start(__Instance);
 
-        PNoteCutCoreEffectsSpawner_NoteCutParticlesEffect = __Instance->noteCutParticlesEffect;
+        PNoteCutCoreEffectsSpawner_NoteCutParticlesEffect = __Instance->____noteCutParticlesEffect;
 
         auto l_Config = GTConfig::Instance();
         if (l_Config->Enabled)

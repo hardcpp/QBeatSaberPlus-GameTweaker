@@ -43,8 +43,8 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
         ObstacleSaberSparkleEffectManager_Start(__Instance);
 
         PObstacleSaberSparkleEffectManager_ObstacleSaberSparkleEffects.clear();
-        for (auto& l_Current : __Instance->effects)
-            PObstacleSaberSparkleEffectManager_ObstacleSaberSparkleEffects.push_back(l_Current);
+        for (auto& l_Current : __Instance->____effects)
+            PObstacleSaberSparkleEffectManager_ObstacleSaberSparkleEffects.push_back(l_Current.unsafePtr());
 
         auto l_Config = GTConfig::Instance();
         if (l_Config->Enabled)

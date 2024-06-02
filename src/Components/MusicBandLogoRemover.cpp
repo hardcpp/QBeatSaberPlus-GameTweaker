@@ -31,7 +31,7 @@ namespace QBeatSaberPlus_GameTweaker::Components {
     /// @brief On component first frame
     void MusicBandLogoRemover::Start()
     {
-        m_AudioTimeSyncController = Resources::FindObjectsOfTypeAll<AudioTimeSyncController*>().FirstOrDefault();
+        m_AudioTimeSyncController = Resources::FindObjectsOfTypeAll<AudioTimeSyncController*>()->FirstOrDefault();
     }
 
     ////////////////////////////////////////////////////////////////////////////
@@ -41,7 +41,7 @@ namespace QBeatSaberPlus_GameTweaker::Components {
     void MusicBandLogoRemover::Update()
     {
         if (!m_AudioTimeSyncController)
-            m_AudioTimeSyncController = Resources::FindObjectsOfTypeAll<AudioTimeSyncController*>().FirstOrDefault();
+            m_AudioTimeSyncController = Resources::FindObjectsOfTypeAll<AudioTimeSyncController*>()->FirstOrDefault();
 
         if (CP_SDK_BS::Game::Logic::ActiveScene() != CP_SDK_BS::Game::Logic::ESceneType::Playing
             || !m_AudioTimeSyncController)
@@ -50,13 +50,13 @@ namespace QBeatSaberPlus_GameTweaker::Components {
             return;
         }
 
-        if (m_AudioTimeSyncController->songTime == 0.0f)
+        if (m_AudioTimeSyncController->____songTime == 0.0f)
             return;
 
         GameObject* l_Object = nullptr;
 
         /// BTS
-        l_Object = Resources::FindObjectsOfTypeAll<GameObject*>().FirstOrDefault([](GameObject* x) { return x->get_name() == "MagicDoorSprite"; });
+        l_Object = Resources::FindObjectsOfTypeAll<GameObject*>()->FirstOrDefault([](GameObject* x) { return x->get_name() == "MagicDoorSprite"; });
         if (l_Object != nullptr)
         {
             l_Object->GetComponent<SpriteRenderer*>()->set_enabled(false);
@@ -65,16 +65,16 @@ namespace QBeatSaberPlus_GameTweaker::Components {
         }
 
         /// LinkinPark
-        l_Object = Resources::FindObjectsOfTypeAll<GameObject*>().FirstOrDefault([](GameObject* x) { return x->get_name() == "LinkinParkTextLogoL"; });
+        l_Object = Resources::FindObjectsOfTypeAll<GameObject*>()->FirstOrDefault([](GameObject* x) { return x->get_name() == "LinkinParkTextLogoL"; });
         if (l_Object != nullptr)
         {
             l_Object->GetComponent<SpriteRenderer*>()->set_enabled(false);
 
-            l_Object = Resources::FindObjectsOfTypeAll<GameObject*>().FirstOrDefault([](GameObject* x) { return x->get_name() == "LinkinParkTextLogoR"; });
+            l_Object = Resources::FindObjectsOfTypeAll<GameObject*>()->FirstOrDefault([](GameObject* x) { return x->get_name() == "LinkinParkTextLogoR"; });
             if (l_Object != nullptr)
                 l_Object->GetComponent<SpriteRenderer*>()->set_enabled(false);
 
-            l_Object = Resources::FindObjectsOfTypeAll<GameObject*>().FirstOrDefault([](GameObject* x) { return x->get_name() == "Logo" && x->get_transform()->get_parent()->get_name() == "Environment"; });
+            l_Object = Resources::FindObjectsOfTypeAll<GameObject*>()->FirstOrDefault([](GameObject* x) { return x->get_name() == "Logo" && x->get_transform()->get_parent()->get_name() == "Environment"; });
             if (l_Object != nullptr)
                 l_Object->GetComponent<SpriteRenderer*>()->set_enabled(false);
 

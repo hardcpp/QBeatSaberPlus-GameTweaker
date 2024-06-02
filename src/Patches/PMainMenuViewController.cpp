@@ -36,8 +36,8 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     {
         MainMenuViewController_DidActivate(__Instance, __a, __b, __c);
 
-        if (PMainMenuViewController_MusicPackPromoBanner != __Instance->musicPackPromoBanner)
-            PMainMenuViewController_MusicPackPromoBanner = __Instance->musicPackPromoBanner;
+        if (PMainMenuViewController_MusicPackPromoBanner != __Instance->____musicPackPromoBanner)
+            PMainMenuViewController_MusicPackPromoBanner = __Instance->____musicPackPromoBanner;
 
         auto l_Config = GTConfig::Instance();
         if (l_Config->Enabled)

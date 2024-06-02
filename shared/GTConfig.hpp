@@ -29,8 +29,8 @@ namespace QBeatSaberPlus_GameTweaker {
             {
                 bool        RemoveBaseGameFilterButton  = false;
                 bool        HighlightEnabled            = true;
-                _u::Color32 HighlightPlayed             = _u::Color32(248, 230, 0, 255);
-                _u::Color32 HighlightAllPlayed          = _u::Color32( 82, 247, 0, 255);
+                _u::Color32 HighlightPlayed             = _u::Color32(0, 248, 230, 0, 255);
+                _u::Color32 HighlightAllPlayed          = _u::Color32(0,  82, 247, 0, 255);
 
                 CP_SDK_JSON_SERIALIZE_DECL();
                 CP_SDK_JSON_UNSERIALIZE_DECL();

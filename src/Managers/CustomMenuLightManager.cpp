@@ -3,7 +3,7 @@
 
 #include <CP_SDK/Unity/MTCoroutineStarter.hpp>
 
-#include <GlobalNamespace/MenuLightsPresetSO_LightIdColorPair.hpp>
+#include <GlobalNamespace/MenuLightsPresetSO.hpp>
 #include <GlobalNamespace/SoloFreePlayFlowCoordinator.hpp>
 #include <UnityEngine/GameObject.hpp>
 
@@ -65,21 +65,21 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
         {
             for (int l_I = 0; l_I < m_DefaultPresetBackup.size(); ++l_I)
             {
-                m_DefaultPreset->lightIdColorPairs[l_I]->intensity = std::get<0>(m_DefaultPresetBackup[l_I]);
-                m_DefaultPreset->lightIdColorPairs[l_I]->baseColor = std::get<1>(m_DefaultPresetBackup[l_I]).Ptr();
+                m_DefaultPreset->____lightIdColorPairs[l_I]->___intensity = std::get<0>(m_DefaultPresetBackup[l_I]);
+                m_DefaultPreset->____lightIdColorPairs[l_I]->___baseColor = std::get<1>(m_DefaultPresetBackup[l_I]).Ptr();
             }
 
             if (m_LevelClearedPreset && m_LevelFailedPreset)
             {
                 for (int l_I = 0; l_I < m_LevelClearedPresetBackup.size(); ++l_I)
                 {
-                    m_LevelClearedPreset->lightIdColorPairs[l_I]->intensity = std::get<0>(m_LevelClearedPresetBackup[l_I]);
-                    m_LevelClearedPreset->lightIdColorPairs[l_I]->baseColor = std::get<1>(m_LevelClearedPresetBackup[l_I]).Ptr();
+                    m_LevelClearedPreset->____lightIdColorPairs[l_I]->___intensity = std::get<0>(m_LevelClearedPresetBackup[l_I]);
+                    m_LevelClearedPreset->____lightIdColorPairs[l_I]->___baseColor = std::get<1>(m_LevelClearedPresetBackup[l_I]).Ptr();
                 }
                 for (int l_I = 0; l_I < m_LevelFailedPresetBackup.size(); ++l_I)
                 {
-                    m_LevelFailedPreset->lightIdColorPairs[l_I]->intensity = std::get<0>(m_LevelFailedPresetBackup[l_I]);
-                    m_LevelFailedPreset->lightIdColorPairs[l_I]->baseColor = std::get<1>(m_LevelFailedPresetBackup[l_I]).Ptr();
+                    m_LevelFailedPreset->____lightIdColorPairs[l_I]->___intensity = std::get<0>(m_LevelFailedPresetBackup[l_I]);
+                    m_LevelFailedPreset->____lightIdColorPairs[l_I]->___baseColor = std::get<1>(m_LevelFailedPresetBackup[l_I]).Ptr();
                 }
             }
         }
@@ -89,16 +89,16 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
             m_Custom_Cleared->_color = GTConfig::Instance()->MainMenu->LevelClearedColor;
             m_Custom_Failed->_color  = GTConfig::Instance()->MainMenu->LevelFailedColor;
 
-            for (int l_I = 0; l_I < m_DefaultPreset->lightIdColorPairs->Length(); ++l_I)
-                m_DefaultPreset->lightIdColorPairs[l_I]->baseColor = m_Custom_Default.Ptr();
+            for (int l_I = 0; l_I < m_DefaultPreset->____lightIdColorPairs->get_Length(); ++l_I)
+                m_DefaultPreset->____lightIdColorPairs[l_I]->___baseColor = m_Custom_Default.Ptr();
 
             if (m_LevelClearedPreset && m_LevelFailedPreset)
             {
-                for (int l_I = 0; l_I < m_LevelClearedPreset->lightIdColorPairs->Length(); ++l_I)
-                    m_LevelClearedPreset->lightIdColorPairs[l_I]->baseColor = m_Custom_Cleared.Ptr();
+                for (int l_I = 0; l_I < m_LevelClearedPreset->____lightIdColorPairs->get_Length(); ++l_I)
+                    m_LevelClearedPreset->____lightIdColorPairs[l_I]->___baseColor = m_Custom_Cleared.Ptr();
 
-                for (int l_I = 0; l_I < m_LevelFailedPreset->lightIdColorPairs->Length(); ++l_I)
-                    m_LevelFailedPreset->lightIdColorPairs[l_I]->baseColor = m_Custom_Failed.Ptr();
+                for (int l_I = 0; l_I < m_LevelFailedPreset->____lightIdColorPairs->get_Length(); ++l_I)
+                    m_LevelFailedPreset->____lightIdColorPairs[l_I]->___baseColor = m_Custom_Failed.Ptr();
             }
         }
 
@@ -106,7 +106,7 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
         {
             if (m_MenuLightsManager && m_DefaultPreset)
             {
-                m_MenuLightsManager->preset = m_DefaultPreset.Ptr();
+                m_MenuLightsManager->____preset = m_DefaultPreset.Ptr();
                 m_MenuLightsManager->set_enabled(true);
             }
         }
@@ -125,7 +125,7 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
         {
             if (m_MenuLightsManager && m_DefaultPreset)
             {
-                m_MenuLightsManager->preset = m_DefaultPreset.Ptr();
+                m_MenuLightsManager->____preset = m_DefaultPreset.Ptr();
                 m_MenuLightsManager->set_enabled(true);
             }
         }
@@ -144,7 +144,7 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
         {
             if (m_MenuLightsManager && m_LevelClearedPreset)
             {
-                m_MenuLightsManager->preset = m_LevelClearedPreset.Ptr();
+                m_MenuLightsManager->____preset = m_LevelClearedPreset.Ptr();
                 m_MenuLightsManager->set_enabled(true);
             }
         }
@@ -163,7 +163,7 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
         {
             if (m_MenuLightsManager && m_LevelFailedPreset)
             {
-                m_MenuLightsManager->preset = m_LevelFailedPreset.Ptr();
+                m_MenuLightsManager->____preset = m_LevelFailedPreset.Ptr();
                 m_MenuLightsManager->set_enabled(true);
             }
         }
@@ -188,10 +188,10 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
                 m_MenuLightsManager = l_Found;
         }
 
-        m_DefaultPreset = m_MenuLightsManager->defaultPreset;
+        m_DefaultPreset = m_MenuLightsManager->____defaultPreset;
 
-        for (auto& l_Current : m_DefaultPreset->lightIdColorPairs)
-            m_DefaultPresetBackup.push_back(std::make_tuple(l_Current->intensity, l_Current->baseColor));
+        for (auto& l_Current : m_DefaultPreset->____lightIdColorPairs)
+            m_DefaultPresetBackup.push_back(std::make_tuple(l_Current->___intensity, l_Current->___baseColor.unsafePtr()));
 
         UpdateFromConfig();
 
@@ -202,14 +202,14 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
             l_SoloFreePlayFlowCoordinator = GameObject::FindObjectOfType<SoloFreePlayFlowCoordinator*>();
         }
 
-        m_LevelClearedPreset    = l_SoloFreePlayFlowCoordinator->resultsClearedLightsPreset;
-        m_LevelFailedPreset     = l_SoloFreePlayFlowCoordinator->resultsFailedLightsPreset;
+        m_LevelClearedPreset    = l_SoloFreePlayFlowCoordinator->____resultsClearedLightsPreset;
+        m_LevelFailedPreset     = l_SoloFreePlayFlowCoordinator->____resultsFailedLightsPreset;
 
-        for (auto& l_Current : m_LevelClearedPreset->lightIdColorPairs)
-            m_LevelClearedPresetBackup.push_back(std::make_tuple(l_Current->intensity, l_Current->baseColor));
+        for (auto& l_Current : m_LevelClearedPreset->____lightIdColorPairs)
+            m_LevelClearedPresetBackup.push_back(std::make_tuple(l_Current->___intensity, l_Current->___baseColor.unsafePtr()));
 
-        for (auto& l_Current : m_LevelFailedPreset->lightIdColorPairs)
-            m_LevelFailedPresetBackup.push_back(std::make_tuple(l_Current->intensity, l_Current->baseColor));
+        for (auto& l_Current : m_LevelFailedPreset->____lightIdColorPairs)
+            m_LevelFailedPresetBackup.push_back(std::make_tuple(l_Current->___intensity, l_Current->___baseColor.unsafePtr()));
 
         UpdateFromConfig();
     }

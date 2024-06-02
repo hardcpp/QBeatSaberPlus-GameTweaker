@@ -44,8 +44,8 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     {
         SaberClashEffect_Start(__Instance);
 
-        PSaberClashEffect_SparkleParticleSystem = __Instance->sparkleParticleSystem;
-        PSaberClashEffect_GlowParticleSystem    = __Instance->glowParticleSystem;
+        PSaberClashEffect_SparkleParticleSystem = __Instance->____sparkleParticleSystem;
+        PSaberClashEffect_GlowParticleSystem    = __Instance->____glowParticleSystem;
 
         auto l_Config = GTConfig::Instance();
         if (l_Config->Enabled)

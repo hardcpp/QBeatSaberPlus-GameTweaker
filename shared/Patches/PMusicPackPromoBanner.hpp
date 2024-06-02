@@ -4,13 +4,13 @@
 
 namespace QBeatSaberPlus_GameTweaker::Patches {
 
-    /// @brief PromoViewController remover
-    class PPromoViewController
+    /// @brief MusicPackPromoBanner remover
+    class PMusicPackPromoBanner
     {
-        CP_SDK_NO_DEF_CTORS(PPromoViewController);
+        CP_SDK_NO_DEF_CTORS(PMusicPackPromoBanner);
 
         public:
-            /// @brief Set if PromoViewController should be hidden
+            /// @brief Set if MusicPackPromoBanner should be hidden
             /// @param p_Enabled New state
             static void SetEnabled(bool p_Enabled);
 
