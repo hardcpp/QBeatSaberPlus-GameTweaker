@@ -6,7 +6,7 @@
     "info": {
       "name": "QBeatSaberPlus-GameTweaker",
       "id": "qbeatsaberplus-gametweaker",
-      "version": "6.3.1",
+      "version": "6.3.2",
       "url": "https://github.com/hardcpp/QBeatSaberPlus-GameTweaker",
       "additionalData": {
         "overrideSoName": "libqbeatsaberplus-gametweaker.so",
@@ -44,17 +44,17 @@
     "dependencies": [
       {
         "id": "beatsaber-hook",
-        "versionRange": "^5.1.6",
+        "versionRange": "^5.1.9",
         "additionalData": {}
       },
       {
         "id": "bs-cordl",
-        "versionRange": "^3500.0.0",
+        "versionRange": "3700.*",
         "additionalData": {}
       },
       {
         "id": "custom-types",
-        "versionRange": "^0.17.6",
+        "versionRange": "^0.17.8",
         "additionalData": {}
       },
       {
@@ -82,7 +82,7 @@
       },
       {
         "id": "chatplex-sdk-bs",
-        "versionRange": "^6.3.1",
+        "versionRange": "^6.3.2",
         "additionalData": {
           "private": true
         }
@@ -93,13 +93,13 @@
     {
       "dependency": {
         "id": "paper",
-        "versionRange": "=3.6.3",
+        "versionRange": "=3.6.4",
         "additionalData": {
-          "soLink": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.3/libpaperlog.so",
-          "debugSoLink": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.3/debug_libpaperlog.so",
+          "soLink": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.4/libpaperlog.so",
+          "debugSoLink": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.4/debug_libpaperlog.so",
           "overrideSoName": "libpaperlog.so",
-          "modLink": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.3/paperlog.qmod",
-          "branchName": "version/v3_6_3",
+          "modLink": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.4/paperlog.qmod",
+          "branchName": "version/v3_6_4",
           "compileOptions": {
             "systemIncludes": [
               "shared/utfcpp/source"
@@ -108,7 +108,7 @@
           "cmake": false
         }
       },
-      "version": "3.6.3"
+      "version": "3.6.4"
     },
     {
       "dependency": {
@@ -124,28 +124,28 @@
     {
       "dependency": {
         "id": "chatplex-sdk-bs",
-        "versionRange": "=6.3.1",
+        "versionRange": "=6.3.2",
         "additionalData": {
-          "soLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.1/libchatplex-sdk-bs.so",
-          "debugSoLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.1/debug_libchatplex-sdk-bs.so",
+          "soLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.2/libchatplex-sdk-bs.so",
+          "debugSoLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.2/debug_libchatplex-sdk-bs.so",
           "overrideSoName": "libchatplex-sdk-bs.so",
-          "modLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.1/ChatPlexSDK-BS.qmod",
-          "branchName": "version/v6_3_1",
+          "modLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.2/ChatPlexSDK-BS.qmod",
+          "branchName": "version/v6_3_2",
           "cmake": true
         }
       },
-      "version": "6.3.1"
+      "version": "6.3.2"
     },
     {
       "dependency": {
         "id": "custom-types",
-        "versionRange": "=0.17.8",
+        "versionRange": "=0.17.10",
         "additionalData": {
-          "soLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.8/libcustom-types.so",
-          "debugSoLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.8/debug_libcustom-types.so",
+          "soLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.10/libcustom-types.so",
+          "debugSoLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.10/debug_libcustom-types.so",
           "overrideSoName": "libcustom-types.so",
-          "modLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.8/CustomTypes.qmod",
-          "branchName": "version/v0_17_8",
+          "modLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.10/CustomTypes.qmod",
+          "branchName": "version/v0_17_10",
           "compileOptions": {
             "cppFlags": [
               "-Wno-invalid-offsetof"
@@ -154,15 +154,15 @@
           "cmake": true
         }
       },
-      "version": "0.17.8"
+      "version": "0.17.10"
     },
     {
       "dependency": {
         "id": "bs-cordl",
-        "versionRange": "=3500.0.0",
+        "versionRange": "=3700.0.0",
         "additionalData": {
           "headersOnly": true,
-          "branchName": "version/v3500_0_0",
+          "branchName": "version/v3700_0_0",
           "compileOptions": {
             "includePaths": [
               "include"
@@ -177,20 +177,20 @@
           }
         }
       },
-      "version": "3500.0.0"
+      "version": "3700.0.0"
     },
     {
       "dependency": {
         "id": "beatsaber-hook",
-        "versionRange": "=5.1.7",
+        "versionRange": "=5.1.9",
         "additionalData": {
-          "soLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v5.1.7/libbeatsaber-hook_5_1_7.so",
-          "debugSoLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v5.1.7/debug_libbeatsaber-hook_5_1_7.so",
-          "branchName": "version/v5_1_7",
+          "soLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v5.1.9/libbeatsaber-hook_5_1_9.so",
+          "debugSoLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v5.1.9/debug_libbeatsaber-hook_5_1_9.so",
+          "branchName": "version/v5_1_9",
           "cmake": true
         }
       },
-      "version": "5.1.7"
+      "version": "5.1.9"
     },
     {
       "dependency": {

@@ -4,26 +4,26 @@
   "id": "qbeatsaberplus-gametweaker",
   "modloader": "Scotland2",
   "author": "HardCPP",
-  "version": "6.3.1",
+  "version": "6.3.2",
   "packageId": "com.beatgames.beatsaber",
-  "packageVersion": "1.35.0_8016709773",
+  "packageVersion": "1.37.0_9064817954",
   "description": "Feel good!",
   "coverImage": "cover.png",
   "dependencies": [
     {
-      "version": "^0.17.6",
+      "version": "^0.17.8",
       "id": "custom-types",
-      "downloadIfMissing": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.8/CustomTypes.qmod"
+      "downloadIfMissing": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.10/CustomTypes.qmod"
     },
     {
       "version": "^3.6.3",
       "id": "paper",
-      "downloadIfMissing": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.3/paperlog.qmod"
+      "downloadIfMissing": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.4/paperlog.qmod"
     },
     {
-      "version": "^6.3.1",
+      "version": "^6.3.2",
       "id": "chatplex-sdk-bs",
-      "downloadIfMissing": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.1/ChatPlexSDK-BS.qmod"
+      "downloadIfMissing": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.2/ChatPlexSDK-BS.qmod"
     }
   ],
   "modFiles": [],
@@ -31,7 +31,7 @@
     "libqbeatsaberplus-gametweaker.so"
   ],
   "libraryFiles": [
-    "libbeatsaber-hook_5_1_7.so"
+    "libbeatsaber-hook_5_1_9.so"
   ],
   "fileCopies": [],
   "copyExtensions": []
