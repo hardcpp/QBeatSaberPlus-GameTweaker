@@ -2,8 +2,6 @@
 #include "UI/SettingsMainView.hpp"
 #include "GameTweaker.hpp"
 
-#include <UnityEngine/Application.hpp>
-
 using namespace CP_SDK::XUI;
 using namespace UnityEngine;
 
@@ -88,7 +86,7 @@ namespace QBeatSaberPlus_GameTweaker::UI {
     void SettingsLeftView::OnDocumentationButton()
     {
         ShowMessageModal(u"URL opened in your web browser.");
-        Application::OpenURL(GameTweaker::Instance()->DocumentationURL());
+        CP_SDK::ChatPlexSDK::OpenURL(GameTweaker::Instance()->DocumentationURL());
     }
 
 }   ///< namespace QBeatSaberPlus_GameTweaker::UI
