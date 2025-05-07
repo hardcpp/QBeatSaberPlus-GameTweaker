@@ -11,7 +11,8 @@
   "description": "Feel good!",
   "coverImage": "cover.png",
   "dependencies": [],
-  "modFiles": ["${binary}"],
+  "modFiles": [],
+  "lateModFiles": ["${binary}"],
   "libraryFiles": [],
   "fileCopies": [],
   "copyExtensions": []

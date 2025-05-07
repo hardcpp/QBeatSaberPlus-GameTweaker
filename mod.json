@@ -32,10 +32,10 @@
       "downloadIfMissing": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.4.0/ChatPlexSDK-BS.qmod"
     }
   ],
-  "modFiles": [
+  "modFiles": [],
+  "lateModFiles": [
     "libqbeatsaberplus-gametweaker.so"
   ],
-  "lateModFiles": [],
   "libraryFiles": [],
   "fileCopies": [],
   "copyExtensions": []
