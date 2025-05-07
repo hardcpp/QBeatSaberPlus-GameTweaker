@@ -7,11 +7,11 @@
   "author": "HardCPP",
   "version": "${version}",
   "packageId": "com.beatgames.beatsaber",
-  "packageVersion": "1.37.0_9064817954",
+  "packageVersion": "1.40.4_5283",
   "description": "Feel good!",
   "coverImage": "cover.png",
   "dependencies": [],
-  "modFiles": [],
+  "modFiles": ["${binary}"],
   "libraryFiles": [],
   "fileCopies": [],
   "copyExtensions": []

@@ -21,9 +21,9 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
         LevelListTableCell_SetDataFromLevelAsync, &LevelListTableCell::SetDataFromLevelAsync,
         void, LevelListTableCell* __Instance,
 
-        BeatmapLevel* __a, bool __b, bool __c, bool __d)
+        BeatmapLevel* __a, bool __b, bool __c, bool __d, bool __e)
     {
-        LevelListTableCell_SetDataFromLevelAsync(__Instance, __a, __b, __c, __d);
+        LevelListTableCell_SetDataFromLevelAsync(__Instance, __a, __b, __c, __d, __e);
 
         auto l_Config = GTConfig::Instance();
         if (l_Config->Enabled && l_Config->LevelSelection->HighlightEnabled)

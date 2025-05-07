@@ -38,7 +38,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
         MusicPackPromoBanner_Setup, &MusicPackPromoBanner::Setup,
         void, MusicPackPromoBanner* __Instance,
 
-        __DlcPromoPanelModel__PromoInfo* __a, bool __b)
+        DlcPromoPanelModel_PromoInfo* __a, bool __b)
     {
         MusicPackPromoBanner_Setup(__Instance, __a, __b);
 
