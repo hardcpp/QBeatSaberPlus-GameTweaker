@@ -108,6 +108,7 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
             {
                 m_MenuLightsManager->____preset = m_DefaultPreset.Ptr();
                 m_MenuLightsManager->set_enabled(true);
+                m_MenuLightsManager->RefreshColors();
             }
         }
         catch (const std::exception&)
@@ -127,6 +128,7 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
             {
                 m_MenuLightsManager->____preset = m_DefaultPreset.Ptr();
                 m_MenuLightsManager->set_enabled(true);
+                m_MenuLightsManager->RefreshColors();
             }
         }
         catch (const std::exception&)
@@ -146,6 +148,7 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
             {
                 m_MenuLightsManager->____preset = m_LevelClearedPreset.Ptr();
                 m_MenuLightsManager->set_enabled(true);
+                m_MenuLightsManager->RefreshColors();
             }
         }
         catch (const std::exception&)
@@ -165,6 +168,7 @@ namespace QBeatSaberPlus_GameTweaker::Managers {
             {
                 m_MenuLightsManager->____preset = m_LevelFailedPreset.Ptr();
                 m_MenuLightsManager->set_enabled(true);
+                m_MenuLightsManager->RefreshColors();
             }
         }
         catch (const std::exception&)

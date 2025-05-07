@@ -1,38 +1,42 @@
 {
+  "$schema": "https://raw.githubusercontent.com/Lauriethefish/QuestPatcher.QMod/refs/heads/main/QuestPatcher.QMod/Resources/qmod.schema.json",
   "_QPVersion": "0.1.1",
   "name": "QBeatSaberPlus-GameTweaker",
   "id": "qbeatsaberplus-gametweaker",
   "modloader": "Scotland2",
   "author": "HardCPP",
-  "version": "6.3.2",
+  "version": "6.4.0",
   "packageId": "com.beatgames.beatsaber",
-  "packageVersion": "1.37.0_9064817954",
+  "packageVersion": "1.40.4_5283",
   "description": "Feel good!",
   "coverImage": "cover.png",
   "dependencies": [
     {
-      "version": "^0.17.8",
+      "version": "^6.4.1",
+      "id": "beatsaber-hook",
+      "downloadIfMissing": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v6.4.1/beatsaber-hook.qmod"
+    },
+    {
+      "version": "^0.18.2",
       "id": "custom-types",
-      "downloadIfMissing": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.17.10/CustomTypes.qmod"
+      "downloadIfMissing": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.18.2/CustomTypes.qmod"
     },
     {
-      "version": "^3.6.3",
-      "id": "paper",
-      "downloadIfMissing": "https://github.com/Fernthedev/paperlog/releases/download/v3.6.4/paperlog.qmod"
+      "version": "^4.6.1",
+      "id": "paper2_scotland2",
+      "downloadIfMissing": "https://github.com/Fernthedev/paperlog/releases/download/v4.6.3/paper2_scotland2.qmod"
     },
     {
-      "version": "^6.3.2",
+      "version": "^6.4.0",
       "id": "chatplex-sdk-bs",
-      "downloadIfMissing": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.3.2/ChatPlexSDK-BS.qmod"
+      "downloadIfMissing": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.4.0/ChatPlexSDK-BS.qmod"
     }
   ],
-  "modFiles": [],
-  "lateModFiles": [
+  "modFiles": [
     "libqbeatsaberplus-gametweaker.so"
   ],
-  "libraryFiles": [
-    "libbeatsaber-hook_5_1_9.so"
-  ],
+  "lateModFiles": [],
+  "libraryFiles": [],
   "fileCopies": [],
   "copyExtensions": []
 }

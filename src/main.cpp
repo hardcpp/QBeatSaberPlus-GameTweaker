@@ -1,3 +1,4 @@
+#include "git_info.h"
 #include "Logger.hpp"
 #include "GameTweaker.hpp"
 
@@ -10,7 +11,7 @@
 static modloader::ModInfo s_ModInfo{"QBeatSaberPlus-GameTweaker", VERSION, GIT_COMMIT};
 
 // Called at the early stages of game loading
-extern "C" void setup(CModInfo* p_ModInfo)
+extern "C" __attribute__((visibility("default"))) void setup(CModInfo* p_ModInfo)
 {
     p_ModInfo->id           = s_ModInfo.id.c_str();
     p_ModInfo->version      = s_ModInfo.version.c_str();
@@ -30,7 +31,7 @@ extern "C" void setup(CModInfo* p_ModInfo)
 ////////////////////////////////////////////////////////////////////////////
 
 // Called later on in the game loading - a good time to install function hooks
-extern "C" void late_load()
+extern "C" __attribute__((visibility("default"))) void late_load()
 {
     il2cpp_functions::Init();
 

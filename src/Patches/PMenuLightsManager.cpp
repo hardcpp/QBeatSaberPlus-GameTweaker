@@ -14,9 +14,9 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
         MenuLightsManager_SetColorPreset, &MenuLightsManager::SetColorPreset,
         void, MenuLightsManager* __Instance,
 
-        MenuLightsPresetSO* __a, bool __b)
+        MenuLightsPresetSO* __a, bool __b, float __c)
     {
-        MenuLightsManager_SetColorPreset(__Instance, Managers::CustomMenuLightManager::GetPresetForPatch(__a), __b);
+        MenuLightsManager_SetColorPreset(__Instance, Managers::CustomMenuLightManager::GetPresetForPatch(__a), __b, __c);
     }
 
 }   ///< namespace QBeatSaberPlus_GameTweaker::Patches
