@@ -7,7 +7,7 @@
     "info": {
       "name": "QBeatSaberPlus-GameTweaker",
       "id": "qbeatsaberplus-gametweaker",
-      "version": "6.4.0",
+      "version": "6.4.1",
       "url": "https://github.com/hardcpp/QBeatSaberPlus-GameTweaker",
       "additionalData": {
         "overrideSoName": "libqbeatsaberplus-gametweaker.so",
@@ -49,17 +49,17 @@
     "dependencies": [
       {
         "id": "beatsaber-hook",
-        "versionRange": "^6.4.1",
+        "versionRange": "^6.4.2",
         "additionalData": {}
       },
       {
         "id": "bs-cordl",
-        "versionRange": "^4004.0.0",
+        "versionRange": "4008.*",
         "additionalData": {}
       },
       {
         "id": "custom-types",
-        "versionRange": "^0.18.2",
+        "versionRange": "^0.18.3",
         "additionalData": {}
       },
       {
@@ -71,13 +71,8 @@
         }
       },
       {
-        "id": "libil2cpp",
-        "versionRange": "^0.4.0",
-        "additionalData": {}
-      },
-      {
         "id": "paper2_scotland2",
-        "versionRange": "^4.6.1",
+        "versionRange": "^4.6.4",
         "additionalData": {}
       },
       {
@@ -87,7 +82,7 @@
       },
       {
         "id": "chatplex-sdk-bs",
-        "versionRange": "^6.4.0",
+        "versionRange": "^6.4.1",
         "additionalData": {
           "private": true
         }
@@ -98,12 +93,12 @@
     {
       "dependency": {
         "id": "paper2_scotland2",
-        "versionRange": "=4.6.3",
+        "versionRange": "=4.6.4",
         "additionalData": {
-          "soLink": "https://github.com/Fernthedev/paperlog/releases/download/v4.6.3/libpaper2_scotland2.so",
+          "soLink": "https://github.com/Fernthedev/paperlog/releases/download/v4.6.4/libpaper2_scotland2.so",
           "overrideSoName": "libpaper2_scotland2.so",
-          "modLink": "https://github.com/Fernthedev/paperlog/releases/download/v4.6.3/paper2_scotland2.qmod",
-          "branchName": "version/v4_6_3",
+          "modLink": "https://github.com/Fernthedev/paperlog/releases/download/v4.6.4/paper2_scotland2.qmod",
+          "branchName": "version/v4_6_4",
           "compileOptions": {
             "systemIncludes": [
               "shared/utfcpp/source"
@@ -112,7 +107,7 @@
           "cmake": false
         }
       },
-      "version": "4.6.3"
+      "version": "4.6.4"
     },
     {
       "dependency": {
@@ -133,28 +128,28 @@
     {
       "dependency": {
         "id": "chatplex-sdk-bs",
-        "versionRange": "=6.4.0",
+        "versionRange": "=6.4.1",
         "additionalData": {
-          "soLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.4.0/libchatplex-sdk-bs.so",
-          "debugSoLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.4.0/debug_libchatplex-sdk-bs.so",
+          "soLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.4.1/libchatplex-sdk-bs.so",
+          "debugSoLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.4.1/debug_libchatplex-sdk-bs.so",
           "overrideSoName": "libchatplex-sdk-bs.so",
-          "modLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.4.0/ChatPlexSDK-BS.qmod",
-          "branchName": "version/v6_4_0",
+          "modLink": "https://github.com/hardcpp/QuestChatPlexSDK-BS/releases/download/v6.4.1/ChatPlexSDK-BS.qmod",
+          "branchName": "version/v6_4_1",
           "cmake": true
         }
       },
-      "version": "6.4.0"
+      "version": "6.4.1"
     },
     {
       "dependency": {
         "id": "custom-types",
-        "versionRange": "=0.18.2",
+        "versionRange": "=0.18.3",
         "additionalData": {
-          "soLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.18.2/libcustom-types.so",
-          "debugSoLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.18.2/debug_libcustom-types.so",
+          "soLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.18.3/libcustom-types.so",
+          "debugSoLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.18.3/debug_libcustom-types.so",
           "overrideSoName": "libcustom-types.so",
-          "modLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.18.2/CustomTypes.qmod",
-          "branchName": "version/v0_18_2",
+          "modLink": "https://github.com/QuestPackageManager/Il2CppQuestTypePatching/releases/download/v0.18.3/CustomTypes.qmod",
+          "branchName": "version/v0_18_3",
           "compileOptions": {
             "cppFlags": [
               "-Wno-invalid-offsetof"
@@ -163,15 +158,15 @@
           "cmake": true
         }
       },
-      "version": "0.18.2"
+      "version": "0.18.3"
     },
     {
       "dependency": {
         "id": "bs-cordl",
-        "versionRange": "=4004.0.0",
+        "versionRange": "=4008.0.0",
         "additionalData": {
           "headersOnly": true,
-          "branchName": "version/v4004_0_0",
+          "branchName": "version/v4008_0_0",
           "compileOptions": {
             "includePaths": [
               "include"
@@ -187,22 +182,40 @@
           }
         }
       },
-      "version": "4004.0.0"
+      "version": "4008.0.0"
+    },
+    {
+      "dependency": {
+        "id": "libcurl",
+        "versionRange": "=8.5.0",
+        "additionalData": {
+          "staticLinking": true,
+          "soLink": "https://github.com/darknight1050/openssl-curl-android/releases/download/v8.5.0/libcurl.a",
+          "overrideSoName": "libcurl.a",
+          "branchName": "version-v8.5.0"
+        }
+      },
+      "version": "8.5.0"
     },
     {
       "dependency": {
         "id": "beatsaber-hook",
-        "versionRange": "=6.4.1",
+        "versionRange": "=6.4.2",
         "additionalData": {
-          "soLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v6.4.1/libbeatsaber-hook.so",
-          "debugSoLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v6.4.1/debug_libbeatsaber-hook.so",
+          "soLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v6.4.2/libbeatsaber-hook.so",
+          "debugSoLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v6.4.2/debug_libbeatsaber-hook.so",
           "overrideSoName": "libbeatsaber-hook.so",
-          "modLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v6.4.1/beatsaber-hook.qmod",
-          "branchName": "version/v6_4_1",
+          "modLink": "https://github.com/QuestPackageManager/beatsaber-hook/releases/download/v6.4.2/beatsaber-hook.qmod",
+          "branchName": "version/v6_4_2",
+          "compileOptions": {
+            "cppFlags": [
+              "-Wno-extra-qualification"
+            ]
+          },
           "cmake": true
         }
       },
-      "version": "6.4.1"
+      "version": "6.4.2"
     },
     {
       "dependency": {
