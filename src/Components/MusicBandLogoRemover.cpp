@@ -74,7 +74,11 @@ namespace QBeatSaberPlus_GameTweaker::Components {
             if (l_Object != nullptr)
                 l_Object->GetComponent<SpriteRenderer*>()->set_enabled(false);
 
-            l_Object = Resources::FindObjectsOfTypeAll<GameObject*>()->FirstOrDefault([](GameObject* x) { return x->get_name() == "Logo" && x->get_transform()->get_parent()->get_name() == "Environment"; });
+            l_Object = Resources::FindObjectsOfTypeAll<GameObject*>()->FirstOrDefault([](GameObject* x) {
+                return x->get_name() == "Logo" &&
+                x->get_transform()->get_parent() &&
+                x->get_transform()->get_parent()->get_name() == "Environment";
+            });
             if (l_Object != nullptr)
                 l_Object->GetComponent<SpriteRenderer*>()->set_enabled(false);
 
