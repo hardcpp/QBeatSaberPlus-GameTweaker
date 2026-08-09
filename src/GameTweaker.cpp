@@ -165,8 +165,8 @@ namespace QBeatSaberPlus_GameTweaker {
 
         if (GTConfig::Instance()->Environment->RemoveMusicBandLogo && p_LevelData && p_LevelData->Data && p_LevelData->Data->targetEnvironmentInfo)
         {
-            if (   p_LevelData->Data->targetEnvironmentInfo->____serializedName == "BTSEnvironment"
-                || p_LevelData->Data->targetEnvironmentInfo->____serializedName == "LinkinParkEnvironment")
+            if (   p_LevelData->Data->targetEnvironmentInfo->_serializedName == "BTSEnvironment"
+                || p_LevelData->Data->targetEnvironmentInfo->_serializedName == "LinkinParkEnvironment")
             {
                 GameObject::New_ctor("BeatSaberPlus_MusicBandLogoRemover")->AddComponent<Components::MusicBandLogoRemover*>();
             }

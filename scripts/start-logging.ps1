@@ -36,7 +36,7 @@ if ($help -eq $true) {
 $bspid = adb shell pidof com.beatgames.beatsaber
 $command = "adb logcat "
 
-if ($all -eq $false) {
+if ($all -eq $true) {
     $loops = 0
     while ([string]::IsNullOrEmpty($bspid) -and $loops -lt 3) {
         Start-Sleep -Milliseconds 100
@@ -55,8 +55,8 @@ if ($all -eq $false) {
 if ($all -eq $false) {
     $pattern = "("
     if ($self -eq $true) {
-        $modID = (Get-Content "./mod.json" -Raw | ConvertFrom-Json).id
-        $pattern += "ChatPlexSDK-BS|$modID|"
+        $modName = (Get-Content "./mod.json" -Raw | ConvertFrom-Json).name
+        $pattern += "ChatPlexSDK-BS|$modName|"
     }
     if (![string]::IsNullOrEmpty($custom)) {
         $pattern += "$custom|"

@@ -5,9 +5,6 @@
 #include <CP_SDK/Unity/Extensions/ColorU.hpp>
 #include <CP_SDK_BS/Game/Levels.hpp>
 
-#include <stdio.h>
-#include <string.h>
-
 #include <GlobalNamespace/LevelListTableCell.hpp>
 #include <GlobalNamespace/BeatmapLevel.hpp>
 #include <TMPro/TextMeshProUGUI.hpp>
@@ -32,7 +29,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
             {
                 auto l_HaveAnyScore     = false;
                 auto l_HaveAllScores    = false;
-                CP_SDK_BS::Game::Levels::GetScoresByLevelID(__a->___levelID, &l_HaveAnyScore, &l_HaveAllScores);
+                CP_SDK_BS::Game::Levels::GetScoresByLevelID(__a->levelID, &l_HaveAnyScore, &l_HaveAllScores);
 
                 StringW l_ColorPrefix;
                 if (l_HaveAllScores)
@@ -40,7 +37,7 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
                 else if (l_HaveAnyScore)
                     l_ColorPrefix = "<" + ColorU::ToHexRGB(ColorU::Convert(l_Config->LevelSelection->HighlightPlayed)) + ">";
 
-                __Instance->____songNameText->set_text(l_ColorPrefix + __Instance->____songNameText->get_text());
+                __Instance->_songNameText->set_text(l_ColorPrefix + __Instance->_songNameText->get_text());
             }
             catch (const std::exception& l_Exception)
             {

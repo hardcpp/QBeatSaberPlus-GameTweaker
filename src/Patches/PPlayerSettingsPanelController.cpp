@@ -180,21 +180,21 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
 
         PlayerSettingsPanelController::PlayerSettingsPanelLayout __a)
     {
-        PMainMenuViewController_LeftHandedToggle                                  = __Instance->____leftHandedToggle;
-        PMainMenuViewController_EnvironmentEffectsFilterDefaultPresetDropdown     = __Instance->____environmentEffectsFilterDefaultPresetDropdown;
-        PMainMenuViewController_EnvironmentEffectsFilterExpertPlusPresetDropdown  = __Instance->____environmentEffectsFilterExpertPlusPresetDropdown;
-        PMainMenuViewController_ReduceDebrisToggle                                = __Instance->____reduceDebrisToggle;
-        PMainMenuViewController_NoTextsAndHudsToggle                              = __Instance->____noTextsAndHudsToggle;
-        PMainMenuViewController_AdvanceHudToggle                                  = __Instance->____advanceHudToggle;
-        PMainMenuViewController_PlayerHeightSettingsController                    = __Instance->____playerHeightSettingsController;
-        PMainMenuViewController_AutomaticPlayerHeightToggle                       = __Instance->____automaticPlayerHeightToggle;
-        PMainMenuViewController_SfxVolumeSettingsController                       = __Instance->____sfxVolumeSettingsController;
-        PMainMenuViewController_SaberTrailIntensitySettingsController             = __Instance->____saberTrailIntensitySettingsController;
-        PMainMenuViewController_NoteJumpStartBeatOffsetDropdown                   = __Instance->____noteJumpStartBeatOffsetDropdown;
-        PMainMenuViewController_HideNoteSpawnEffectToggle                         = __Instance->____hideNoteSpawnEffectToggle;
-        PMainMenuViewController_AdaptiveSfxToggle                                 = __Instance->____adaptiveSfxToggle;
-        PMainMenuViewController_NoteJumpDurationTypeSettingsDropdown              = __Instance->____noteJumpDurationTypeSettingsDropdown;
-        PMainMenuViewController_NoteJumpFixedDurationSettingsController           = __Instance->____noteJumpFixedDurationSettingsController;
+        PMainMenuViewController_LeftHandedToggle                                  = __Instance->_leftHandedToggle;
+        PMainMenuViewController_EnvironmentEffectsFilterDefaultPresetDropdown     = __Instance->_environmentEffectsFilterDefaultPresetDropdown;
+        PMainMenuViewController_EnvironmentEffectsFilterExpertPlusPresetDropdown  = __Instance->_environmentEffectsFilterExpertPlusPresetDropdown;
+        PMainMenuViewController_ReduceDebrisToggle                                = __Instance->_reduceDebrisToggle;
+        PMainMenuViewController_NoTextsAndHudsToggle                              = __Instance->_noTextsAndHudsToggle;
+        PMainMenuViewController_AdvanceHudToggle                                  = __Instance->_advanceHudToggle;
+        PMainMenuViewController_PlayerHeightSettingsController                    = __Instance->_playerHeightSettingsController;
+        PMainMenuViewController_AutomaticPlayerHeightToggle                       = __Instance->_automaticPlayerHeightToggle;
+        PMainMenuViewController_SfxVolumeSettingsController                       = __Instance->_sfxVolumeSettingsController;
+        PMainMenuViewController_SaberTrailIntensitySettingsController             = __Instance->_saberTrailIntensitySettingsController;
+        PMainMenuViewController_NoteJumpStartBeatOffsetDropdown                   = __Instance->_noteJumpStartBeatOffsetDropdown;
+        PMainMenuViewController_HideNoteSpawnEffectToggle                         = __Instance->_hideNoteSpawnEffectToggle;
+        PMainMenuViewController_AdaptiveSfxToggle                                 = __Instance->_adaptiveSfxToggle;
+        PMainMenuViewController_NoteJumpDurationTypeSettingsDropdown              = __Instance->_noteJumpDurationTypeSettingsDropdown;
+        PMainMenuViewController_NoteJumpFixedDurationSettingsController           = __Instance->_noteJumpFixedDurationSettingsController;
 
         auto l_Config = GTConfig::Instance();
 

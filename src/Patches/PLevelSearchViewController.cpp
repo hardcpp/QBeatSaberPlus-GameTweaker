@@ -39,8 +39,8 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
     {
         LevelSearchViewController_Setup(__Instance, __a, __b, __c);
 
-        if (__Instance->____filterParamsText)
-            PLevelSearchViewController_FilterButton = __Instance->____filterParamsText->get_transform()->get_parent()->get_gameObject();
+        if (__Instance->_filterParamsText)
+            PLevelSearchViewController_FilterButton = __Instance->_filterParamsText->get_transform()->get_parent()->get_gameObject();
         else
             PLevelSearchViewController_FilterButton = nullptr;
 

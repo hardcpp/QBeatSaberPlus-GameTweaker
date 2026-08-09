@@ -22,9 +22,9 @@ namespace QBeatSaberPlus_GameTweaker::Patches {
             return; ///< Continue to original function
         }
 
-        if (!__Instance->____fullComboLost)
+        if (!__Instance->_fullComboLost)
         {
-            __Instance->____fullComboLost = true;
+            __Instance->_fullComboLost = true;
 
             auto l_Line0 = __Instance->get_transform()->Find("Line0");
             auto l_Line1 = __Instance->get_transform()->Find("Line1");
