@@ -50,7 +50,7 @@ namespace QBeatSaberPlus_GameTweaker::Components {
             return;
         }
 
-        if (m_AudioTimeSyncController->____songTime == 0.0f)
+        if (m_AudioTimeSyncController->_songTime == 0.0f)
             return;
 
         GameObject* l_Object = nullptr;
